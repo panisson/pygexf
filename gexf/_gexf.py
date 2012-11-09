@@ -665,7 +665,7 @@ class Edge :
             
             # spells
             if self.spells :
-                spellsXML.append(self.spells.getXML())
+                edgeXML.append(self.spells.getXML())
 
             # COLOR on edges is supported in GEXF since 1.2                
             if not self.r=="" and not self.g=="" and not self.b=="" :
