@@ -477,7 +477,7 @@ class Node :
         self.setColor(r,g,b)
         
         #spells expecting format = [{start:"",end:""},...]
-        self.spells= spells
+        self.spells = Spells(spells)
         
         if not self.pid=="" :
             if not self._graph.nodeExists(self.pid) :
@@ -636,7 +636,7 @@ class Edge :
         self.setColor(r,g,b)
         
         #spells expecting format = [{start:"",end:""},...]
-        self.spells= Spells()
+        self.spells = Spells(spells)
         
         # add existing nodesattributes default values : bad idea and unecessary
         #self._graph.addDefaultAttributesToEdge(self)
